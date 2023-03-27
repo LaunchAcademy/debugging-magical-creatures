@@ -1,0 +1,10 @@
+<h1>All Magical Creatures</h1>
+
+{{ log creaturesData }}
+<p>{{moreStuffs}}</p>
+<ul>
+{{#each creaturesData }}
+  {{!-- {{ log this }} --}}
+  <li>{{ this.name }}</li>
+{{/each }}
+</ul>
