@@ -1,0 +1,15 @@
+<h1>Details for a Magical Creature</h1>
+
+{{ log creatureObject }}
+
+{{#if message}}
+  <p>{{message}}</p>
+{{/if}}
+
+<ul>
+  <li>Name: {{creatureObject.name}}</li>
+  <li>Age: {{creatureObject.age}}</li>
+  <li>Ability: {{creatureObject.ability}}</li>
+</ul>
+
+{{!-- <img src={{creatureObject.image}} /> --}}

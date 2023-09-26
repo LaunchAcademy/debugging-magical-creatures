@@ -3,9 +3,10 @@ import magicalCreaturesRouter from "./magicalCreaturesRouter.js"
 
 const rootRouter = new express.Router()
 
+// GET "/"
 rootRouter.get("/", (req, res) => {
   // root route
-  res.render("index")
+  res.render("home")
 })
 
 rootRouter.use("/magical-creatures", magicalCreaturesRouter)
